@@ -1,6 +1,8 @@
 def upper_case(s):
-    '''
-    принимает на вход строку и возвращает ее со всеми заглавными буквами
-    '''
+    '''делает буквы в строке заглавными'''
     return s.title()
 
+
+def upper_first_letter(s):
+    s = ' '.join(word.capitalize() for word in s.split())
+    return s
